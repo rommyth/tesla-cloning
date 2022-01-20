@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from "styled-components"
-import { Fade } from "react-awesome-reveal";
-import ArrowDown from '../images/down-arrow.svg'
+import { Fade } from "react-awesome-reveal"
+import arrowDown from '../images/down-arrow.svg'
+import './Apa.css'
 
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
+    console.log(backgroundImg);
     return (
-        <Wrap bgImage={backgroundImg}>
+        <Banner bgImage={backgroundImg}>
             <Fade>
                 <ItemText>
                     <h1>{title}</h1>
@@ -13,6 +15,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                 </ItemText>
             </Fade>
             <Buttons>
+                <div className="test"></div>
                 <Fade>
                     <ButtonGroup>
                         <LeftButton>{leftBtnText}</LeftButton>
@@ -24,15 +27,15 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         }
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src={ArrowDown} />
+                <DownArrow src={arrowDown} />
             </Buttons>
-        </Wrap>
+        </Banner>
     )
 }
 
 export default Section
 
-const Wrap = styled.div`
+const Banner = styled.div`
     
      width: 100vw;
      height: 100vh;
@@ -43,7 +46,8 @@ const Wrap = styled.div`
      flex-direction: column; 
      justify-content: space-between;
      align-items: center;
-     background-image: ${props => `url("../images/${props.bgImage}")`}
+     background-image: ${props => `url(${props.bgImage})`}
+     
 `;
 
 const ItemText = styled.div`
