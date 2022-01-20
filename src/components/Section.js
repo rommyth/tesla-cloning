@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Fade } from "react-awesome-reveal";
-import DownArrow from '../images/down-arrow.svg'
+import ArrowDown from '../images/down-arrow.svg'
 
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
     return (
@@ -24,7 +24,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         }
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src={DownArrow} />
+                <DownArrow src={ArrowDown} />
             </Buttons>
         </Wrap>
     )
