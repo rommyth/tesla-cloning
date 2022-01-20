@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Fade } from "react-awesome-reveal";
+import DownArrow from '../images/down-arrow.svg'
 
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
     return (
@@ -23,7 +24,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         }
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src={process.env.PUBLIC_URL + "/images/down-arrow.svg"} />
+                <DownArrow src={DownArrow} />
             </Buttons>
         </Wrap>
     )
@@ -42,7 +43,7 @@ const Wrap = styled.div`
      flex-direction: column; 
      justify-content: space-between;
      align-items: center;
-     background-image: ${props => `url({process.env.PUBLIC_URL +"/images/${props.bgImage}"})`}
+     background-image: ${props => `url("../images/${props.bgImage}")`}
 `;
 
 const ItemText = styled.div`
