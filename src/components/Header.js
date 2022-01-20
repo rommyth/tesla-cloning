@@ -11,6 +11,11 @@ function Header() {
     // const cars = useSelector(selectCars);
     // console.log(cars);
 
+    const onContentClick = (value) => {
+        const element = document.getElementById(`${value}`);
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <Container>
             <a>
@@ -20,10 +25,12 @@ function Header() {
                 {/* {cars && cars.map((car, index) => (
                     <a href="#">{car}</a>
                 ))} */}
-                <a href="#">Model S</a>
-                <a href="#">Model 3</a>
-                <a href="#">Model X</a>
-                <a href="#">Model Y</a>
+                <a onClick={() => onContentClick(1)}>Model S</a>
+                <a onClick={() => onContentClick(2)}>Model 3</a>
+                <a onClick={() => onContentClick(3)}>Model X</a>
+                <a onClick={() => onContentClick(4)}>Model Y</a>
+                <a onClick={() => onContentClick(5)}>Solar Panel</a>
+                <a onClick={() => onContentClick(6)}>Solar Roof</a>
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -72,6 +79,8 @@ const Menu = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
+    font-size:10pt;
+    cursor:pointer;
     a{
         font-weight: 600;
         text-transform: uppercase;
@@ -97,6 +106,7 @@ const Menu = styled.div`
 const RightMenu = styled.div`
 display: flex;
 align-items:center;
+font-size:10pt;
 a{
     font-weight: 600;
     text-transform: uppercase;

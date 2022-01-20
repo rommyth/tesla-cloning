@@ -4,10 +4,10 @@ import { Fade } from "react-awesome-reveal"
 import arrowDown from '../images/down-arrow.svg'
 import './Apa.css'
 
-function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
+function Section({ id, title, description, leftBtnText, rightBtnText, backgroundImg }) {
     console.log(backgroundImg);
     return (
-        <Banner bgImage={backgroundImg}>
+        <Banner bgImage={backgroundImg} id={id}>
             <Fade>
                 <ItemText>
                     <h1>{title}</h1>

@@ -15,6 +15,7 @@ function Home() {
         <Container>
 
             <Section
+                id="1"
                 title="Model S"
                 description="Order Online for Touchless Delivery"
                 backgroundImg={models}
@@ -22,6 +23,7 @@ function Home() {
                 rightBtnText="Existing Inventory"
             />
             <Section
+                id="2"
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
                 backgroundImg={modely}
@@ -29,6 +31,7 @@ function Home() {
                 rightBtnText="Existing Inventory"
             />
             <Section
+                id="3"
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
                 backgroundImg={model3}
@@ -36,6 +39,7 @@ function Home() {
                 rightBtnText="Existing Inventory"
             />
             <Section
+                id="4"
                 title="Model X"
                 description="Order Online for Touchless Delivery"
                 backgroundImg={modelx}
@@ -43,6 +47,7 @@ function Home() {
                 rightBtnText="Existing Inventory"
             />
             <Section
+                id="5"
                 title="Lowest Cost Solar Panels in America"
                 description="Money-back guarantee"
                 backgroundImg={spanel}
@@ -50,6 +55,7 @@ function Home() {
                 rightBtnText="Learn More"
             />
             <Section
+                id="6"
                 title="Solar for New Roofs"
                 description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
                 backgroundImg={sroof}
@@ -57,6 +63,7 @@ function Home() {
                 rightBtnText="Learn More"
             />
             <Section
+                id="7"
                 title="Accessories"
                 description=""
                 backgroundImg={acc}
