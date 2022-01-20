@@ -23,7 +23,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         }
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src="%PUBLIC_URL%/images/down-arrow.svg" />
+                <DownArrow src={process.env.PUBLIC_URL + "/images/down-arrow.svg"} />
             </Buttons>
         </Wrap>
     )
